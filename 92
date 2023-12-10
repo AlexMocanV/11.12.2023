@@ -1,0 +1,26 @@
+#include <iostream>
+
+using namespace std;
+/*
+a) 16 5
+d) 1 11 1 11 1 11
+*/
+int main()
+{
+    int n,i,nr,y,x;
+    cin>>n;
+    y=0;
+    nr=0;
+    for(i=1;i<=n;i++)
+    {
+        while(cin>>x&&x>=1 && x<=10)
+        {
+            nr++;   
+        }
+        y+=x;
+    }
+    cout<<int (y/n)<<" ";
+    cout<<nr;
+
+    return 0;
+}
