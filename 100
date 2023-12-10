@@ -1,0 +1,42 @@
+#include <iostream>
+
+using namespace std;
+/*
+a) 10
+b)160 709
+    
+ 
+d)#include <iostream>
+
+using namespace std;
+int main()
+{
+    int a;
+    cin>>a;
+    while(a>100)
+    {
+        a=a/10;
+    }
+    cout<<a%10+a%100;
+    return 0
+*/
+int main()
+{
+    int a,b;
+    cin>>a;
+    do
+    {
+        b=0;
+        while(a!=0)
+        {
+            b=b+a%10;
+            a=a/10;
+        }
+        a=b;
+    }while(a<10);
+    
+    cout<<b;
+    
+    
+    return 0;
+}
