@@ -1,0 +1,32 @@
+#include <iostream>
+
+using namespace std;
+/*
+a) 25  
+d) 30 1
+*/
+int main()
+{
+    int z,x,y;
+    cin>>z>>x;
+    if(z<0)
+    {
+        z=-z;
+    }
+    if(x<0)
+    {
+        x=-x;
+    }
+    y=x;
+    while(x==y)
+    {
+        y=x;
+        x=int((x+z/x)/2);
+    }
+    
+    
+    cout<<x;
+    
+
+    return 0;
+}
